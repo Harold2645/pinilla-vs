@@ -3,8 +3,8 @@ let numDosInput = document.getElementById("numDos");
 let sumarButton = document.getElementById("sumar");
 
 sumarButton.addEventListener("click", function() {
-    const numUno = parseFloat(numUnoInput.value);
-    const numDos = parseFloat(numDosInput.value);
+    let numUno = parseFloat(numUnoInput.value);
+    let numDos = parseFloat(numDosInput.value);
 
     if (!isNaN(numUno) && !isNaN(numDos)) {
         const resultado = numUno + numDos;
