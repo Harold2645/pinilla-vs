@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de JULPHSOTF</title>
+    <link rel="stylesheet" href="css.css">
+
+</head>
+
+<body>
+    <section id="cuerpo_suma">
+        <form name="suma" id="suma" action="" method="post" onsubmit="telon()" enctype="multipart/form-data">
+
+            <h3>GRAN CALCULADORA PERO SOLO SUMA</h3>
+
+                <div class="input">
+                    <input type="number" name="numero1" id="numero1" required tabindex="1" pattern="[0-9]{}">
+                    <h3>+</h3>
+                    <input type="number" name="numero2" id="numero2" required tabindex="2" pattern="[0-9]{}">
+                </div>
+
+                <div class="botones">
+                    <button type="button" onclick="realizarOperacion('sumar')">Sumar</button>
+                    <button type="button" onclick="realizarOperacion('restar')">Restar</button>
+                    <button type="button" onclick="realizarOperacion('multiplicar')">Multiplicar</button>
+                    <button type="button" onclick="realizarOperacion('dividir')">Dividir</button>
+                </div>
+                
+
+                <p>Resultado: <span id="resultado"></span></p>
+
+            
+
+            <script src="js.js"></script>
+
+        </form>
+    </section>    
+</body>
+
+</html>
